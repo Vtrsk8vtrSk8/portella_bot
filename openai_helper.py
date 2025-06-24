@@ -1,1 +1,0 @@
-# Funções de IA para interpretar comandos
