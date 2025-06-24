@@ -1,14 +1,14 @@
 # Usa imagem oficial do Python
 FROM python:3.11-slim
 
-# Define diretório de trabalho
+# Cria diretório no container
 WORKDIR /app
 
-# Copia os arquivos para dentro do container
+# Copia os arquivos do repositório para o container
 COPY . .
 
-# Instala dependências
+# Instala as dependências
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Executa o bot
+# Comando para iniciar o bot
 CMD ["python", "main.py"]
