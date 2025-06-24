@@ -4,5 +4,8 @@ primary_region = "iad"
 [build]
   dockerfile = "Dockerfile"
 
+[env]
+  PORT = "8080"
+
 [processes]
   app = "python main.py"
