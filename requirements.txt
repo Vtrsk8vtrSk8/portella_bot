@@ -1,0 +1,7 @@
+python-telegram-bot==20.3
+google-api-python-client
+pytz
+openai
+SpeechRecognition
+pydub
+apscheduler
