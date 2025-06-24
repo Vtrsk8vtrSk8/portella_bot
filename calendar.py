@@ -1,1 +1,0 @@
-# Funções de integração com Google Calendar
