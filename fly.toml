@@ -1,0 +1,12 @@
+app = "portella-bot"
+primary_region = "iad"
+
+kill_signal = "SIGINT"
+kill_timeout = 5
+
+[build]
+  builder = "paketobuildpacks/builder:base"
+  buildpacks = ["gcr.io/paketo-buildpacks/python"]
+
+[processes]
+  worker = "python main.py"
