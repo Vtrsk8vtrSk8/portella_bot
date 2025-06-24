@@ -11,4 +11,4 @@ COPY . /app
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Rodar o bot
-CMD ["tail", "-f", "/dev/null"]
+CMD ["python", "main.py"]
