@@ -1,1 +1,0 @@
-# Funções para processar comandos de voz usando SpeechRecognition e pydub
