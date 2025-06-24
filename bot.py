@@ -1,1 +1,0 @@
-# Código principal do bot Telegram com IA, voz, relatórios e integração com Google Calendar
