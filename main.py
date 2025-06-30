@@ -46,7 +46,8 @@ def agendar_evento(nome, hora, data=None):
         data = datetime.now(tz)
     else:
         if isinstance(data, datetime):
-            data = tz.localize(data)
+            if data.tzinfo is None:
+                data = tz.localize(data)
         else:
             data = tz.localize(datetime.combine(data, datetime.strptime(hora, "%H:%M").time()))
 
