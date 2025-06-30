@@ -1,15 +1,17 @@
 app = "portella-bot"
-kill_signal = "SIGINT"
-kill_timeout = 5
 
 [build]
-  builder = "paketobuildpacks/builder:base"
+  dockerfile = "Dockerfile"
 
 [env]
   PORT = "8080"
 
-[experimental]
-  auto_rollback = true
+[[services]]
+  internal_port = 8080
+  protocol = "tcp"
 
-[processes]
-  app = "python main.py"
+  [[services.ports]]
+    port = 80
+
+  [[services.ports]]
+    port = 443
